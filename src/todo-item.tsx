@@ -73,6 +73,7 @@ export const TodoItem = CustomElement.define(
 
       if (isEditing.value) {
         editInput.element.focus();
+        editInput.element.select();
       }
 
       yield;
