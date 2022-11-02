@@ -19,7 +19,7 @@
   "dependencies": {
     "@snugjs/html": "^3.0.0",
     "classnames": "^2.3.2",
-    "snugjs": "^2.1.0",
+    "snugjs": "^3.0.0",
     "todomvc-app-css": "^2.4.2",
     "todomvc-common": "^1.0.5"
   },
