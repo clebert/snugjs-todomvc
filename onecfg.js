@@ -7,6 +7,7 @@ import {
   node,
   npm,
   prettier,
+  snugjs,
   swc,
   typescript,
   vscode,
@@ -24,6 +25,7 @@ writeFiles(
   ...node({nodeVersion: `18`}),
   ...npm(),
   ...prettier(),
+  ...snugjs(),
   ...swc({target}),
   ...typescript({target, emit: false}),
   ...vscode({includeFilesInExplorer: false}),
@@ -36,20 +38,5 @@ writeFiles(
       'build:watch': `webpack --mode development --watch`,
       'start': `aws-simple start`,
     },
-  }),
-
-  mergeContent(swc.configFile, {
-    jsc: {
-      parser: {tsx: true},
-      transform: {
-        react: {pragma: `createElement`, pragmaFrag: `createFragment`},
-      },
-    },
-  }),
-
-  ...typescript.mergeCompilerOptions({
-    jsx: `react`,
-    jsxFactory: `createElement`,
-    jsxFragmentFactory: `createFragment`,
   }),
 );

@@ -24,7 +24,7 @@
     "todomvc-common": "^1.0.5"
   },
   "devDependencies": {
-    "@onecfg/standard": "^6.5.1",
+    "@onecfg/standard": "^7.0.1",
     "@size-limit/file": "^8.0.0",
     "@swc/core": "^1.2.220",
     "@types/express": "^4.17.14",
