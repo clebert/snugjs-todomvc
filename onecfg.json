@@ -12,7 +12,17 @@
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json"
   ],
   "patches": {
+    ".eslintignore": [
+      {
+        "value": ["/dist"]
+      }
+    ],
     ".gitignore": [
+      {
+        "value": ["/dist"]
+      }
+    ],
+    ".prettierignore": [
       {
         "value": ["/dist"]
       }
@@ -39,6 +49,11 @@
             "jsxFragmentFactory": "createFragment"
           }
         }
+      }
+    ],
+    "tsconfig.json": [
+      {
+        "value": {"exclude": ["dist"]}
       }
     ]
   }

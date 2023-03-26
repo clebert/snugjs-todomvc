@@ -1,6 +1,6 @@
+import {todos} from './todos.js';
 import {createElement, createFragment} from '@snugjs/html';
 import {CustomElement, createElementRef} from 'snugjs';
-import {todos} from './todos.js';
 
 export const TodoFooter = CustomElement.define(
   `x-todo-footer`,

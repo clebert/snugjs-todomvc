@@ -1,7 +1,7 @@
-import {dirname, join} from 'node:path';
-import {fileURLToPath} from 'node:url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import {dirname, join} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import ResolveTypeScriptPlugin from 'resolve-typescript-plugin';
 
 /** @type {import('webpack').Configuration} */

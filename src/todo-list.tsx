@@ -1,7 +1,7 @@
-import {createElement, createFragment} from '@snugjs/html';
-import {CustomElement, createElementRef} from 'snugjs';
 import {TodoItem} from './todo-item.js';
 import {todos} from './todos.js';
+import {createElement, createFragment} from '@snugjs/html';
+import {CustomElement, createElementRef} from 'snugjs';
 
 export const TodoList = CustomElement.define(
   `x-todo-list`,

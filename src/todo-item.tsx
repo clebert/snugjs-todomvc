@@ -1,8 +1,8 @@
+import {Store} from './store.js';
+import {todos} from './todos.js';
 import {createElement} from '@snugjs/html';
 import classNames from 'classnames';
 import {CustomElement, createElementRef} from 'snugjs';
-import {Store} from './store.js';
-import {todos} from './todos.js';
 
 export const TodoItem = CustomElement.define(
   `x-todo-item`,

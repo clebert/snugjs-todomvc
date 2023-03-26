@@ -1,6 +1,6 @@
+import {todos} from './todos.js';
 import {createElement} from '@snugjs/html';
 import {CustomElement, createElementRef} from 'snugjs';
-import {todos} from './todos.js';
 
 export const TodoHeader = CustomElement.define(
   `x-todo-header`,
