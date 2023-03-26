@@ -3,6 +3,7 @@
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-editorconfig.json",
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json",
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-git.json",
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-ignore-dist.json",
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node.json",
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node-github.json",
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json",
@@ -12,21 +13,6 @@
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json"
   ],
   "patches": {
-    ".eslintignore": [
-      {
-        "value": ["/dist"]
-      }
-    ],
-    ".gitignore": [
-      {
-        "value": ["/dist"]
-      }
-    ],
-    ".prettierignore": [
-      {
-        "value": ["/dist"]
-      }
-    ],
     ".swcrc": [
       {
         "value": {
@@ -49,11 +35,6 @@
             "jsxFragmentFactory": "createFragment"
           }
         }
-      }
-    ],
-    "tsconfig.json": [
-      {
-        "value": {"exclude": ["dist"]}
       }
     ]
   }
